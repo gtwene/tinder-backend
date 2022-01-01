@@ -10,9 +10,9 @@ const connection_url =
   "mongodb+srv://admin:Hw97IQ45lSxMkyOt@cluster0.1nbaj.mongodb.net/tinderdbclone?retryWrites=true&w=majority";
 
 // Middlewares
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-// app.use(Cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(Cors());
 
 //DB Config
 mongoose.connect(connection_url, {
